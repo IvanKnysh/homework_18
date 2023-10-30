@@ -1,6 +1,8 @@
-let getOption = prompt("Оберіть дію (add, sub, mult, div)");
-let firstNumber = +prompt("Введіть перше число");
-let secondNumber = +prompt("Введіть друге число");
+let getOption = prompt("Оберіть дію (add, sub, mult, div)")
+	.trim()
+	.toLowerCase();
+let firstNumber = +prompt("Введіть перше число").trim();
+let secondNumber = +prompt("Введіть друге число").trim();
 
 if (getOption === "add") {
 	alert(`${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}`);
